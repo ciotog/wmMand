@@ -1,0 +1,15 @@
+TODO
+
++ use libgdk, see bubblefishymon ** (current maintainer is not really interested
+	in this, though)
++ julia-set (like in mand.unused.c, partly already available) or another fractal
+	type
++ Use antialiasing for the large image
+
+WISHLIST
+
++ faster calculations: use of mmx instructions? :) (again, current maintainer
+	isn't really interested in this - the only really useful application of mmx
+	for this program is with changing the colormap, and it's more than fast enough
+	with such a small window size. Antialiasing would be done using inter-pixel
+	points, so mmx wouldn't help with this)

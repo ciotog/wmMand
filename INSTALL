@@ -1,0 +1,11 @@
+Untar package:
+	tar xvf wmMand-X.tar.bz2
+
+Compile and install:
+	make
+	make install (as root)
+
+Read the man page:
+	man wmMand
+
+Enjoy!

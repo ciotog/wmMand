@@ -1,0 +1,14 @@
+BUGS
+
+Known:
+	- Has been known to swallow all input and not release (happened to me once
+		with xfce4) -- if this happens to you, try pressing 'q' or 'ESC', or
+		use the combination CTRL-ALT-'/' (keypad divide), which kills grabs on
+		stations where this option hasn't been disabled. Also please let me know
+		what happened (preferably with instructions on how I can duplicate the
+		issue)
+
+Please send bug reports to:
+	mghenderson@lanl.gov (original author Mike Henderson - not sure if this
+		address is valid, or if he wants bug reports...)
+	wmmand@ciotog.net (current updater Chris Craig)

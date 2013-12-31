@@ -1,0 +1,72 @@
+Verson 1.3.2, 14-03-2007
+	- updated by Chris Craig <wmmand@ciotog.net>
+	- added error trapping code for extremely low memory conditions
+	- added a delay before unhiding the cursor (incidentally fixing a missing
+	  'break' bug)
+	- overhauled focus handling - no grabbing the keyboard until a button is
+	  pressed inside the window, and any unhandled keypresses are passed to root
+
+Version 1.3.1, 16-10-2006
+	-	updated by Chris Craig <wmmand@ciotog.net>
+	-	changed INSTALL file to recognize the format change from gz to bz2
+	-	removed "show point and range info" from wishlist, as it's now available
+		with the large display
+	-	removed source code comments about unimplemented keyboard events (lru & d)
+	-	added Home, End, PgUp and PgDown events for moving diagonally
+	-	added zooming in and out with the mouse scroll-wheel
+	-	added whitespace to all mathematical expressions in the code so they're
+		easier to read
+	-	very slight improvements to some calculations
+	-	added -x / --xv command switches to allow the use of xv instead of display
+		for the large image
+	-	usage info has been made more readable
+	-	added 'ESC' / 'q' key events to manually ungrab the pointer (maybe this
+		works...)
+	-	removed definition of TRUE and FALSE and used True and False provided by
+		Xlib instead (since it's already #included, why not?)
+	-	apparently usleep is obsolete (according to the info document) -	replaced
+		by nanosleep (why argue with the library writers?)
+	-	added the ability to launch the current view in XaoS with the 'x' key, if
+		installed (XaoS can be obtained from http://xaos.sourceforge.net/)
+	-	fixed the nagging issue where the mouse wasn't being confined using certain
+		WMs (like Gnome, KDE, XFCE4)
+	-	added toplevel Makefile to make compiling easier
+
+Version 1.3, 12-04-2006
+	-	updated by Chris Craig <wmmand@ciotog.net>
+	-	added "autozoom" using the mouse
+	-	removed 1 pizel border around image (why waste space?)
+	-	more code tweaks and logic error fixes
+
+Version 1.2.1, 11-03-2006
+	-	updated by Chris Craig <wmmand@ciotog.net>
+	-	Bugfixes, having stumbled across the bug reports for the Debian version,
+		which was 1.1-2.1 as of March 2006
+	-	'display' is called without the use of any temp file
+	-	additionally, unlike the latest Debian version  wmMand isn't suspended
+		while display is used -	this means that multiple large displays may be
+		opened
+	-	the display title also gives the current center point and range for the
+		part of the plane it shows
+
+Version 1.2, xx-02-2005
+	-	updated by Chris Craig <wmmand@ciotog.net>
+	-	added keyboard events
+	-	reduced memory footprint significantly
+	-	added command line options: --iterations, --largesize
+	-	code optimizations
+	-	increased maximum iterations to 2048
+	-	changed default zoom to 1.2
+	-	documentation changes
+
+Version 1.1, 14-04-2002
+	-	updated by Pieter-Paul Spiertz <pspiertz@sci.kun.nl>
+	-	clicked coordinate is not centered anymore
+	-	spelling errors in manpage
+	-	changed middle mouse button behaviour to display button bar
+	-	removed u_long declaration in xvgifwr.c
+	-	Dedicated to Wilmer's today deceased cat  
+
+Version 1.0, 15-02-1999 (dd/mm/yyyy)
+	-	initial release
+	-	original author: Michael Henderson <mghenderson@lanl.gov>
